@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator instanceof Misael</title>
+</head>
+<body>
+<script>
+
+    class Employee {
+
+    }
+
+    class Manager extends Employee {
+
+    }
+
+    const misael = new Employee();
+    const wibu = new Manager();
+
+    console.info(typeof misael);
+    console.info(typeof wibu);
+
+    console.info(misael instanceof Employee); // true
+    console.info(misael instanceof Manager); // false
+
+    console.info(wibu instanceof Employee); // true
+    console.info(wibu instanceof Manager); // true
+
+</script>
+</body>
+</html>
