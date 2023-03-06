@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Function Misael</title>
+</head>
+<body>
+    <script>
+
+        function Person(firstName, lastName) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.sayHello = function (name) {
+                console.info(`Hallo ${name}, nama saya adalah ${this.firstName}`)
+            }
+        }
+
+        const misael = new Person("Misael", "Christoher");
+        misael.firstName = "Misael";
+        misael.lastName = "Haryanto";
+        misael.sayHello("Christopher");
+
+        const budi = new Person("Budi", "Santoso");
+        budi.firstName = "Budi";
+        budi.lastName = "Santoso";
+        budi.sayHello("Sutrisno");
+
+        console.log(misael);
+        console.log(budi);
+
+
+    </script>
+</body>
+</html>
