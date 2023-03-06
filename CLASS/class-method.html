@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Class Misael</title>
+</head>
+<body>
+    <script>
+
+        class Motor {
+
+            constructor(name) {
+               this.name = name;
+            }
+
+            sayHello(name) {
+                console.info(`Hello ${name}, Tersedia motor adalah ${this.name}`);
+            }
+        }
+
+        const Nmax = new Motor("Nmax");
+        console.info(Nmax);
+        Nmax.sayHello("Misael");
+
+        const Aerox = new Motor("Aerox");
+        console.info(Aerox);
+        Aerox.sayHello("Misael");
+
+    </script>
+</body>
+</html>
